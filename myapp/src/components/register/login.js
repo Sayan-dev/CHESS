@@ -105,11 +105,11 @@ resetpassword=(event)=>{
         <center> <CircularProgress thickness={7} size={100} style={{color:'grey'}} />  </center>
             :
             <div className="containers">
-            {/* <div className="login container col-lg-12 col-md-12 col-sm-12">
-                <div className="jk">
-                <div className="row headtitle" >
-              <h2 className="neon">Please Login</h2>
-                </div> */}
+                           
+                           <div className="headtitle row">
+                    <h2 className="neon" style={{fontFamily:"sans serif"}}>PLEASE LOGIN</h2>
+                </div>
+ 
            <form id="contact" onSubmit={(event)=>{
                   this.submitform(event)
                 }}>

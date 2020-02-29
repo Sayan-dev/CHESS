@@ -12,7 +12,7 @@ export default function(ComposedClass,reload,adminRoute = null){
 
         componentDidMount(){
             this.props.dispatch(auth()).then(response =>{
-                console.log(this.props.user)
+                console.log(this.props.user.userData)
                 let user = this.props.user.userData;
 
                 if(!user.isAuth){

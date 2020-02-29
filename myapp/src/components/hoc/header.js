@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import logo from '../../images/logo.png';
 import {connect} from 'react-redux';
 import { Link } from 'react-router-dom';
 import {log} from "../actions/memberactions"
-import {chess} from '../../images/chess.png'
-import {djlogo} from '../../images/djlogo.png'
+import chess from '../../images/chess.png'
+import djlogo from '../../images/djlogo.png'
 class Header extends Component {
   
    logoutuser=()=>{
@@ -21,7 +20,6 @@ class Header extends Component {
         return (
   
              <div className='header'>
-               {/* <p id="logo">STUDENT ACADEMIC DEPOSITORY</p> */}
                <div className="containerl">
                <img className="limg" src={chess} alt="chess" />
              <img className="rimg" src={djlogo} alt="djlogo" />
@@ -29,7 +27,7 @@ class Header extends Component {
              <div className="heading2">NATIONAL INSTITUTE OF TECHNOLOGY DURGAPUR</div>
              </div>
              <nav className="navbar navbar-expand-md bg-dark navbar-dark">
-              <a className="navbar-brand" href="#">  <img src={logo} alt="logo" style={{width:'40px'}}/></a>
+              <a className="navbar-brand" href="#">  <img src={chess} alt="logo" style={{width:'40px'}}/></a>
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span className="navbar-toggler-icon"></span>
               </button>
@@ -37,6 +35,12 @@ class Header extends Component {
                 <ul className="navbar-nav">
                   <li className="nav-item">
                   <Link className ="nav-link"  to="/">HOME</Link>
+                  </li>
+                  <li className="nav-item">
+                  <Link className ="nav-link"  to="/facad">FACULTY</Link>
+                  </li>
+                  <li className="nav-item">
+                  <Link className ="nav-link"  to="/subject">SYLLABUS</Link>
                   </li>
                   <li className="nav-item">
                   <Link className ="nav-link"  to="/register">REGISTER</Link>    

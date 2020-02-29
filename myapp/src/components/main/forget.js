@@ -66,10 +66,15 @@ if(isformvalid){
         <center> <h2>Email sent to <u>{this.state.data.email}</u></h2> </center>
             :
             <div className="containers">
-        
+                     
+                     <div className="headtitle row">
+                    <h2 className="neon" style={{fontFamily:"sans serif"}}>RESET PASSWORD</h2>
+                </div>
                 <form id="contact" onSubmit={(event)=>{
                   this.submitform(event)
                 }}>
+                      
+ 
                         <div><img src={hexa} id="image"/>
               <h3>CHEMICAL ENGINEERING STUDENTS SOCIETY</h3>
                 <h4>National Institute of Technology Durgapur</h4>

@@ -168,12 +168,10 @@ onrchange=(e)=>{
         <center> <CircularProgress thickness={7} size={10} style={{color:'grey'}} />  </center>
             :
             <div className="containers">
-                {/* <div className="form">
+                
                 <div className="headtitle row">
                     <h2 className="neon" style={{fontFamily:"sans serif"}}>REGISTER YOURSELF TO CHEMICAL ALUMNI DATABASE</h2>
                 </div>
-                <div style={{display:'flex'}} className="row">
-                    <div className="col-lg-12 col-sm-12 col-md-12 f"> */}
                 <form id="contact" onSubmit={(event)=>{
                   this.submitform(event)
                 }}>

@@ -1,5 +1,21 @@
 import React from 'react';
 import aman from '../../images/aman.jpeg'
+import AH from '../../images/AH.jpg'
+
+import AKS from '../../images/AKS.jpg'
+import GH from '../../images/GH.jpg'
+import SD from '../../images/SD.jpg'
+import JS from '../../images/JS.jpg'
+import BKM from '../../images/BKM.jpg'
+import SP from '../../images/SP.jpg'
+import SKL from '../../images/SKL.jpg'
+import BD from '../../images/BD.jpg'
+import MKM from '../../images/MKM.jpg'
+import PP from '../../images/PP.jpg'
+import PPG from '../../images/PPG.png'
+import RGC from '../../images/RGC.jpg'
+import KCG from '../../images/KCG.jpg'
+
 const Facad = () => {
     return (
         <div>
@@ -11,7 +27,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={aman} className="user"/>
+                <img src={RGC} className="user"/>
                 </div>
               <div className="desco">
                 <div className="b">Rajib Ghosh Chaudhuri</div>
@@ -39,7 +55,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={aman} className="user"/>
+                <img src={BD} className="user"/>
                 </div>
               <div className="desco">
                 <div className="b">Bimal Das</div>
@@ -67,7 +83,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={aman} className="user"/>
+                <img src={SD} className="user"/>
                 </div>
               <div className="desco">
                 <div className="b">Susmita Dutta</div>
@@ -95,7 +111,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={aman} className="user"/>
+                <img src={KCG} className="user"/>
                 </div>
               <div className="desco">
                 <div className="b">Kartik Chandra Ghanta</div>
@@ -123,7 +139,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={aman} className="user"/>
+                <img src={PPG} className="user"/>
                 </div>
               <div className="desco">
                 <div className="b">Parthapratim Gupta</div>
@@ -151,7 +167,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={aman} className="user"/>
+                <img src={GH} className="user"/>
                 </div>
               <div className="desco">
                 <div className="b">Gopinath Halder</div>
@@ -179,7 +195,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={aman} className="user"/>
+                <img src={AH} className="user"/>
                 </div>
               <div className="desco">
                 <div className="b">Abhiram Hens</div>
@@ -207,7 +223,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={aman} className="user"/>
+                <img src={MKM} className="user"/>
                 </div>
               <div className="desco">
                 <div className="b">Mrinal Kanti Mondal</div>
@@ -236,7 +252,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={aman} className="user"/>
+                <img src={SKL} className="user"/>
                 </div>
               <div className="desco">
                 <div className="b">Sandip Kumar Lahiri</div>
@@ -264,7 +280,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={aman} className="user"/>
+                <img src={PPG} className="user"/>
                 </div>
               <div className="desco">
                 <div className="b">Tamal Mandal</div>
@@ -292,7 +308,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={aman} className="user"/>
+                <img src={BKM} className="user"/>
                 </div>
               <div className="desco">
                 <div className="b">Bikash Kumar Mondal</div>
@@ -320,7 +336,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={aman} className="user"/>
+                <img src={PP} className="user"/>
                 </div>
               <div className="desco">
                 <div className="b">Parimal Pal</div>
@@ -348,7 +364,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={aman} className="user"/>
+                <img src={SP} className="user"/>
                 </div>
               <div className="desco">
                 <div className="b">Swapan Paruya</div>
@@ -377,7 +393,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={aman} className="user"/>
+                <img src={AKS} className="user"/>
                 </div>
               <div className="desco">
                 <div className="b">Anup Kumar Sadhukhan</div>
@@ -406,7 +422,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={aman} className="user"/>
+                <img src={JS} className="user"/>
                 </div>
               <div className="desco">
                 <div className="b">Jaya Sikder</div>
