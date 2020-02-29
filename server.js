@@ -187,7 +187,7 @@ app.post('/api/members/login',(req,res)=>{
 
             member.generateToken((err,member)=>{
                 if(err) return res.status(400).send(err);
-                    res.cookie('w_auth',member.token).status(200).json({
+                        res.cookie('w_auth',member.token).status(200).json({
                         loginSuccess: true,
                         member:member
                     })
@@ -217,7 +217,7 @@ app.get('/api/records/allalum',(req,res)=>{
 app.post('/api/records/searchyr',(req,res)=>{
     console.log(req.body)
     Record.find( {$or: [
-        {"year":req.body.year}, {"name":req.year}
+        {"year":req.body.year}, {"name":req.year},{"workplace":req.year}
      ]},(err,result)=>{
         
       console.log(result) 

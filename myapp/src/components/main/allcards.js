@@ -18,7 +18,7 @@ class Allalumni extends Component {
             value:'',
             config:{
                 name:'search',
-                placeholder:'Search by year of passing here',
+                placeholder:'Search by anything',
                 type:'text'
             },
             validation:{

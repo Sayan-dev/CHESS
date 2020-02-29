@@ -4,6 +4,7 @@ import FormFields from '../utils/formfields';
 import {update,validform, generatedata} from '../utils/formtions'
 import {connect} from 'react-redux'
 import {registeruser} from '../actions/memberactions'
+import hexa from '../../images/hexa.png'
 
 class Register extends Component {
     state={
@@ -166,17 +167,21 @@ onrchange=(e)=>{
             this.state.loading?
         <center> <CircularProgress thickness={7} size={10} style={{color:'grey'}} />  </center>
             :
-            <div className="jumbotron">
-                <div className="form">
+            <div className="containers">
+                {/* <div className="form">
                 <div className="headtitle row">
                     <h2 className="neon" style={{fontFamily:"sans serif"}}>REGISTER YOURSELF TO CHEMICAL ALUMNI DATABASE</h2>
                 </div>
                 <div style={{display:'flex'}} className="row">
-                    <div className="col-lg-12 col-sm-12 col-md-12 f">
-                <form onSubmit={(event)=>{
+                    <div className="col-lg-12 col-sm-12 col-md-12 f"> */}
+                <form id="contact" onSubmit={(event)=>{
                   this.submitform(event)
                 }}>
-               
+                             <div><img src={hexa} id="image"/>
+              <h3>CHEMICAL ENGINEERING STUDENTS SOCIETY</h3>
+                <h4>National Institute of Technology Durgapur</h4>
+                
+              </div>
                <div className="block row">
                <FormFields
                   formdata={this.state.formdata.name}
@@ -248,15 +253,16 @@ onrchange=(e)=>{
 
                 <br></br>
                 <br></br>
-                <div className="block row">
-          <center>     <button className="btn btn-primary" style={{padding:"10px"}} onClick={(event)=> this.submitform(event)}>
+                        <center>  
+              <fieldset>
+                 <button id="contact-submit" style={{padding:"10px"}} onClick={(event)=> this.submitform(event)}>
                      Create an account
-                </button></center> </div>
+                </button>
+                </fieldset>
+                </center> 
                 </form>
                 </div>
-                 </div>
-            </div>
-            </div>
+                
         );
     }
 }

@@ -4,6 +4,8 @@ import FormFields from '../utils/formfields';
 import {update,validform, generatedata} from '../utils/formtions'
 import {connect} from 'react-redux'
 import {loginuser} from '../actions/memberactions'
+import hexa from '../../images/hexa.png'
+
 class Login extends Component {
     state={
         loading:false,
@@ -93,7 +95,7 @@ resetpassword=(event)=>{
     
     setTimeout(()=>{
         this.props.history.push('/forget');
-    },3000)        
+    },100)        
         }
     
 
@@ -102,15 +104,20 @@ resetpassword=(event)=>{
             this.state.loading?
         <center> <CircularProgress thickness={7} size={100} style={{color:'grey'}} />  </center>
             :
-            <div className="jumbotron">
-            <div className="login container col-lg-12 col-md-12 col-sm-12">
+            <div className="containers">
+            {/* <div className="login container col-lg-12 col-md-12 col-sm-12">
                 <div className="jk">
                 <div className="row headtitle" >
               <h2 className="neon">Please Login</h2>
-                </div>
-           <form onSubmit={(event)=>{
+                </div> */}
+           <form id="contact" onSubmit={(event)=>{
                   this.submitform(event)
                 }}>
+                       <div><img src={hexa} id="image"/>
+              <h3>CHEMICAL ENGINEERING STUDENTS SOCIETY</h3>
+                <h4>National Institute of Technology Durgapur</h4>
+                
+              </div>
                
                <div className=" row block lblock">
                <FormFields
@@ -128,19 +135,19 @@ resetpassword=(event)=>{
                 />
                 </div>
                   
-                <div className="row block lblock">
-          <center>     <button className="btn btn-primary" style={{padding:"10px"}}onClick={(event)=> this.submitform(event)}>
+        
+          <center>     <button className="contact-submit" style={{padding:"10px"}}onClick={(event)=> this.submitform(event)}>
                      Login
-                </button></center> </div>
+                </button></center>
           
-                <div className="row block lblock">
-          <center>     <button className="btn btn-primary" style={{padding:"10px"}}onClick={(event)=> this.resetpassword(event)}>
+    
+             <center>
+                 <button id="forgot" style={{padding:"10px"}} onClick={(event)=> this.resetpassword(event)}>
                      Forgot Password
-                </button></center> </div>
+                </button>
+                </center> 
 
                </form>
-               </div>
-            </div>
             </div>
         );
     }

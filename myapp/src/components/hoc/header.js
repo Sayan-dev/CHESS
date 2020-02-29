@@ -3,6 +3,8 @@ import logo from '../../images/logo.png';
 import {connect} from 'react-redux';
 import { Link } from 'react-router-dom';
 import {log} from "../actions/memberactions"
+import {chess} from '../../images/chess.png'
+import {djlogo} from '../../images/djlogo.png'
 class Header extends Component {
   
    logoutuser=()=>{
@@ -18,8 +20,13 @@ class Header extends Component {
         return (
   
              <div className='header'>
-               <p id="logo">STUDENT ACADEMIC DEPOSITORY</p>
-              
+               {/* <p id="logo">STUDENT ACADEMIC DEPOSITORY</p> */}
+               <div className="containerl">
+               <img className="limg" src={chess} alt="chess" />
+             <img className="rimg" src={djlogo} alt="djlogo" />
+             <div className="heading1">CHEMICAL ENGINEERING STUDENTS SOCIETY</div>
+             <div className="heading2">NATIONAL INSTITUTE OF TECHNOLOGY DURGAPUR</div>
+             </div>
              <nav className="navbar navbar-expand-md bg-dark navbar-dark">
               <a className="navbar-brand" href="#">  <img src={logo} alt="logo" style={{width:'40px'}}/></a>
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">

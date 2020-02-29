@@ -13,6 +13,8 @@ import Education from './components/main/qualification';
 import Forgot from './components/main/forgotpass';
 import Forget from './components/main/forget'
 import Allalum from './components/main/allcards'
+import Subject from './components/main/subject';
+import Facad from './components/main/facad';
 
 const Routes = () => {
     return (
@@ -21,7 +23,11 @@ const Routes = () => {
             
 
             <Route exact component={main} path="/"/>
+
+            <Route exact component={Subject} path="/subject"/>
             
+            
+            <Route exact component={Facad} path="/facad"/>
             <Route exact component={Register} path="/register"/>
         
             <Route exact component={Login} path="/login"/>
@@ -42,7 +48,7 @@ const Routes = () => {
             <Route exact component={Forget} path="/forget"/>
 
             <Route exact component={Allalum} path="/allalum"/>
-
+            
             <Route component={Error} /> 
 
         
