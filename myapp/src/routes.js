@@ -15,39 +15,39 @@ import Forget from './components/main/forget'
 import Allalum from './components/main/allcards'
 import Subject from './components/main/subject';
 import Facad from './components/main/facad';
-
+import Auth from './components/hoc/auth'
 const Routes = () => {
     return (
         <Layout>
         <Switch>
             
 
-            <Route exact component={main} path="/"/>
+            <Route exact component={Auth(main,null)} path="/"/>
 
-            <Route exact component={Subject} path="/subject"/>
+            <Route exact component={Auth(Subject,null)} path="/subject"/>
             
             
-            <Route exact component={Facad} path="/facad"/>
-            <Route exact component={Register} path="/register"/>
+            <Route exact component={Auth(Facad,null)} path="/facad"/>
+            <Route exact component={Auth(Register,null)} path="/register"/>
         
-            <Route exact component={Login} path="/login"/>
+            <Route exact component={Auth(Login,null)} path="/login"/>
 
-            <Route exact component={Show} path="/show"/>
+            <Route exact component={Auth(Show,true)} path="/show"/>
 
-            <Route exact component={Award} path="/award"/>
+            <Route exact component={Auth(Award,true)} path="/award"/>
             
-            <Route exact component={Education} path="/qualify"/>
+            <Route exact component={Auth(Education,true)} path="/qualify"/>
 
             
-            <Route exact component={Forgot} path="/resetpass"/>
+            <Route exact component={Auth(Forgot,null)} path="/resetpass"/>
             
-            <Route exact component={Details} path="/details"/>
+            <Route exact component={Auth(Details,true)} path="/details"/>
 
-            <Route exact component={Disp} path="/display"/>
+            <Route exact component={Auth(Disp,true)} path="/display"/>
             
-            <Route exact component={Forget} path="/forget"/>
+            <Route exact component={Auth(Forget,null)} path="/forget"/>
 
-            <Route exact component={Allalum} path="/allalum"/>
+            <Route exact component={Auth(Allalum,true)} path="/allalum"/>
             
             <Route component={Error} /> 
 

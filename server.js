@@ -86,7 +86,7 @@ var transporter = nodemailer.createTransport({
 
 
 
-    app.post('/api/members/forgetpassword',(req,res)=>{
+    app.post('/api/members/forgetpassword',auth,(req,res)=>{
         Alumni.findOne({'email':req.body.email},(err,member)=>{
         if(!member){
         res.status(400).json({
@@ -199,7 +199,7 @@ app.post('/api/members/login',(req,res)=>{
 })
 
 
-app.get('/api/records/allalum',(req,res)=>{
+app.get('/api/records/allalum',auth,(req,res)=>{
    console.log('hhhh')
     Record
     .find()
@@ -214,7 +214,7 @@ app.get('/api/records/allalum',(req,res)=>{
  })
 
  
-app.post('/api/records/searchyr',(req,res)=>{
+app.post('/api/records/searchyr',auth,(req,res)=>{
     console.log(req.body)
     Record.find( {$or: [
         {"year":req.body.year}, {"name":req.year},{"workplace":req.year}
@@ -232,7 +232,7 @@ app.post('/api/records/searchyr',(req,res)=>{
 })
 })
 
-app.post('/api/records/adddetail',(req,res)=>{
+app.post('/api/records/adddetail',auth,(req,res)=>{
   
     const record = new Record(req.body);
     record.save((err,doc)=>{
@@ -302,7 +302,7 @@ app.post('/api/records/education',auth,(req,res)=>{
 })
 })
 
-app.post('/api/records/removerecord',(req,res)=>{
+app.post('/api/records/removerecord',auth,(req,res)=>{
     Record.findByIdAndRemove({'email':req.body.email},(err,member)=>{
         if(!member){
         res.status(400).json({
@@ -332,7 +332,7 @@ app.post('/api/records/removerecord',(req,res)=>{
     })
 
 
-app.get('/api/members/removeimage',(req,res)=>{
+app.get('/api/members/removeimage',auth,(req,res)=>{
     let image_id=req.query.public_id
     cloudinary.uploader.destroy(image_id,(error,result)=>{
         if(error) return res.json({success:false,error})
@@ -352,7 +352,7 @@ app.get('/api/members/auth',auth,(req,res)=>{
     })
 })
 
-app.post('/api/members/uploadimage',formidable(),(req,res)=>{
+app.post('/api/members/uploadimage',auth,formidable(),(req,res)=>{
     cloudinary.uploader.upload(req.files.file.path,(result)=>{
        res.status(200).send({
            public_id:result.public_id,

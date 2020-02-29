@@ -13,16 +13,17 @@ export default function(state={},action){
         return {...state, register: action.payload }
         case LOGIN_USER:
             return {...state,member:action.payload}
-           
+         case AUTH_USER:
+             return {...state, userData: action.payload }   
                
-            case logoutuser:
-                    return  {...state,member:{
-                        member:{},
-                        loginSuccess:false,
-                          logoutSuccess:action.payload
+         case logoutuser:
+             return  {...state,member:{
+                     member:{},
+                    loginSuccess:false,
+                    logoutSuccess:action.payload
                         }
                       }
-            case FORGET:
+        case FORGET:
                 return{
                     ...state,forget:action.payload
                 }
@@ -30,7 +31,7 @@ export default function(state={},action){
                     return{
                         ...state,forgetpass:action.payload
                     }
-             default:
+         default:
             return state;
     }
 }

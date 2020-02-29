@@ -9,7 +9,7 @@ const main = () => {
          
     <div id="myCarousel" className="carousel slide" data-ride="carousel">
       <ol className="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
@@ -27,7 +27,7 @@ const main = () => {
           </div>
         </div>
       
-        <div class="item">
+        <div className="item">
           <img src={six} alt="virasat"/>
           <div className="carousel-caption">
           </div>
