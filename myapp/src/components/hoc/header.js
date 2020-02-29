@@ -11,12 +11,13 @@ class Header extends Component {
        this.props.dispatch(log()).then(res=>{
            console.log('logout')
            
-       }).catch(err=>
+        }).catch(err=>
         console.log(err)
         )
    }
    
     render() {
+      console.log(this.props.user.userData)
         return (
   
              <div className='header'>
@@ -40,10 +41,10 @@ class Header extends Component {
                   <li className="nav-item">
                   <Link className ="nav-link"  to="/register">REGISTER</Link>    
                   </li>
-                  {this.props.user.member?
+                  {this.props.user.userData?
                   <ul className="navbar-nav">
                   {
-                    !this.props.user.member.loginSuccess?
+                    !this.props.user.userData.isAuth?
                     <li className="nav-item">
                     <Link className ="nav-link" to="/login">LOGIN</Link>
                     </li>
@@ -53,9 +54,9 @@ class Header extends Component {
                     </li> 
                   } 
                   { 
-                    !this.props.user.member.loginSuccess?
+                    !this.props.user.userData.isAuth?
                     null
-                    :this.props.user.member.member.role===1?
+                    :this.props.user.userData.role===1?
                     <li className="nav-item">
                     <Link className ="nav-link" to="/details" >ADD ACADEMIC DETAILS</Link>
                     </li> :

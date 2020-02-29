@@ -217,7 +217,7 @@ app.get('/api/records/allalum',auth,(req,res)=>{
 app.post('/api/records/searchyr',auth,(req,res)=>{
     console.log(req.body)
     Record.find( {$or: [
-        {"year":req.body.year}, {"name":req.year},{"workplace":req.year}
+        {"year":req.body.year}, {"name":req.body.year},{"workplace":req.body.year}
      ]},(err,result)=>{
         
       console.log(result) 

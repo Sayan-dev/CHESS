@@ -63,6 +63,7 @@ class Allalumni extends Component {
       event.preventDefault()
       const datar=generatedata(this.state.formdata,'register')
      console.log(datar)
+     if(datar.year){
       this.props.dispatch(searchyear(datar)).then(res=>{
           console.log(res)
           this.setState({
@@ -74,6 +75,14 @@ class Allalumni extends Component {
           })
       
        console.log(this.state.data)
+        }else{
+            this.props.dispatch(allalum()).then(response=>{
+                console.log(response.payload)
+                this.setState({
+                    records:response.payload
+                })
+            }).catch(err=>console.log(err))
+        }
     }
 
     goback=(e)=>{

@@ -17,12 +17,9 @@ export default function(state={},action){
              return {...state, userData: action.payload }   
                
          case logoutuser:
-             return  {...state,member:{
-                     member:{},
-                    loginSuccess:false,
-                    logoutSuccess:action.payload
-                        }
-                      }
+             return  {...state,userData:{
+                
+             },member:{} }
         case FORGET:
                 return{
                     ...state,forget:action.payload

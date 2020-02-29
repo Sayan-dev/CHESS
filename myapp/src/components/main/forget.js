@@ -81,10 +81,9 @@ if(isformvalid){
                   id={'email'}
                   change={(event)=>{this.updateform(event)}}
                 />
-                </div><br></br>
-
+                </div>
                 <br></br>
-                
+
                 <br></br>
                 <br></br>
                 <fieldset>
