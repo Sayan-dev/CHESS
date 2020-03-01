@@ -72,7 +72,7 @@ const main = () => {
            <div id="box">
             <div id="smallbox">
                 <i className="fas fa-user-graduate" id="cap1" style={{fontSize:"40px",color:"#E39821"}}>
-                    <h3 id="faculty"><Link to="/subject">FACULTY</Link></h3></i>
+                    <h3 id="faculty"><Link to="/facad">FACULTY</Link></h3></i>
             </div>
             <div id="smallbox">
                 <i className="fas fa-graduation-cap" id="cap1" style={{fontSize:"40px",color:"#E39821"}}>

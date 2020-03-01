@@ -1,7 +1,7 @@
 {
-  "name": "reactriot2019-studentrepo",
+  "name": "CHESS WEBSITE",
   "version": "1.0.0",
-  "description": "IT IS A INITIATIVE BY CHESS",
+  "description": "IT IS AN INITIATIVE BY CHESS",
   "main": "server.js",
   "dependencies": {
     "axios": "^0.18.1",
@@ -39,13 +39,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hackbit/reactriot2019-studentrepo.git"
+    "url": "git+https://github.com/saumyajeet1/CHESS"
   },
   "keywords": [],
-  "author": "Webwarriors",
+  "author": "SAUMYAJEET MUKHERJEE",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Hackbit/reactriot2019-studentrepo/issues"
+    "url": "https://github.com/saumyajeet1/CHESS/issues"
   },
-  "homepage": "https://github.com/Hackbit/reactriot2019-studentrepo#readme"
+  "homepage": "https://github.com/saumyajeet1/CHESS#readme"
 }

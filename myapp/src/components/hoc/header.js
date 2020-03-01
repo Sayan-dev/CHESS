@@ -27,7 +27,6 @@ class Header extends Component {
              <div className="heading2">NATIONAL INSTITUTE OF TECHNOLOGY DURGAPUR</div>
              </div>
              <nav className="navbar navbar-expand-md bg-dark navbar-dark">
-              <a className="navbar-brand" href="#">  <img src={chess} alt="logo" style={{width:'40px'}}/></a>
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span className="navbar-toggler-icon"></span>
               </button>

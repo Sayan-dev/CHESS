@@ -6,8 +6,6 @@ const formidable=require('express-formidable')
 const {auth}=require('./server/middleware/auth')
 const cloudinary=require('cloudinary')
 const { admin } = require('./server/middleware/admin');
-const bcrypt=require('bcrypt')
-const SALT_I=10;
 const {Alumni}=require("./server/models/alumni")
 const {Record}=require("./server/models/records")
 const jwt=require('jsonwebtoken')
@@ -28,13 +26,13 @@ app.use(express.static('myapp/build'))
 
 
 cloudinary.config({
-    cloud_name:'donuobxms',
-    api_key:'388483226664921',
-    api_secret:'ei0IZlhoFXOoWIf5v7ORPKkgqSQ'
+    cloud_name:'da7qseuhl',
+    api_key:'289797951671668',
+    api_secret:'ny7vcwk-Rc3OKwhmAYMWjfSNnkE'
 })
 
 
-const defaultemail={from:'lakehathorn7@gmail.com'}
+const defaultemail={from:'chessnitd2020@gmail.com'}
 
 const sendmail=(emaildata)=>{
     const compemail=Object.assign(defaultemail,emaildata)
@@ -42,8 +40,8 @@ const sendmail=(emaildata)=>{
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'lakehathorn7@gmail.com',
-      pass: 'somaminu'
+      user: 'chessnitd2020@gmail.com',
+      pass: '@chessnitd20'
     }
   });
   
@@ -172,21 +170,21 @@ app.get('/api/members/logout',auth,(req,res)=>{
 app.post('/api/members/login',(req,res)=>{
     Alumni.findOne({'email':req.body.email},(err,member)=>{
         if(!member){
-        res.status(400).json({
+     return   res.json({
             loginSuccess:false,
             message:'Unable to Login'
         })
         }
            member.comparepassword(req.body.password,(err,match)=>{
             if(!match){
-                res.status(400).json({
+        return        res.json({
                     loginSuccess:false,
                     message:'Unable to Login'
                 })
                 }
 
             member.generateToken((err,member)=>{
-                if(err) return res.status(400).send(err);
+                if(err) return res.send(err);
                         res.cookie('w_auth',member.token).status(200).json({
                         loginSuccess: true,
                         member:member

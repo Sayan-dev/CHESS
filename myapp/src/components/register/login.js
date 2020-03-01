@@ -42,7 +42,8 @@ class Login extends Component {
             validationMessage:'',
             label:true
         }
-    }
+    },
+    show:''
 }
 
 
@@ -67,7 +68,7 @@ if(isformvalid){
                 formError:false,
                 loading:true
             })
-            console.log(response.payload)
+            
         if(response.payload.member.role===1){
             
             setTimeout(()=>{
@@ -81,8 +82,10 @@ if(isformvalid){
          }
          
             else{
+                console.log(this.props.user.member)
                 this.setState({
-                    formError:true
+                    formError:true,
+                    show:this.props.user.member.message
                 })
             }
         }
@@ -116,7 +119,10 @@ resetpassword=(event)=>{
                        <div><img src={hexa} id="image"/>
               <h3>CHEMICAL ENGINEERING STUDENTS SOCIETY</h3>
                 <h4>National Institute of Technology Durgapur</h4>
-                
+                {
+                    this.state.show?
+                <label style={{color:'red',fontSize:"20px"}}>{this.state.show}</label>:null
+                }
               </div>
                
                <div className=" row block lblock">
