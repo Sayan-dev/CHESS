@@ -1,7 +1,6 @@
 import React from 'react';
-import aman from '../../images/aman.jpeg'
-import AH from '../../images/AH.jpg'
 
+import AH from '../../images/AH.jpg'
 import AKS from '../../images/AKS.jpg'
 import GH from '../../images/GH.jpg'
 import SD from '../../images/SD.jpg'

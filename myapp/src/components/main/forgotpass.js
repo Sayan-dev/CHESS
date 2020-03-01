@@ -5,6 +5,8 @@ import {update,validform, generatedata} from '../utils/formtions'
 import {connect} from 'react-redux'
 import {forgetpass} from '../actions/memberactions'
 import queryString from 'query-string';
+import hexa from '../../images/hexa.png'
+
 
 
 class Forgot extends Component {
@@ -87,16 +89,19 @@ if(isformvalid){
             this.state.loading?
         <center> <CircularProgress thickness={7} size={10} style={{color:'grey'}} />  </center>
             :
-            <div class="jumbotron">
-                <div className="form">
+            <div className="containers">
                 <div className="headtitle row">
                     <h2 className="neon" style={{fontFamily:"sans serif"}}>RESET PASSWORD</h2>
                 </div>
-                <div style={{display:'flex'}} className="row">
-                    <div className="col-lg-12 col-sm-12 col-md-12 f">
-                <form onSubmit={(event)=>{
+                <form id="contact" onSubmit={(event)=>{
                   this.submitform(event)
                 }}>
+            <div>
+                <img src={hexa} id="image"/>
+              <h3>CHEMICAL ENGINEERING STUDENTS SOCIETY</h3>
+                <h4>National Institute of Technology Durgapur</h4>
+                
+              </div>
                
                 <div className="block row">
                   <FormFields
@@ -118,15 +123,14 @@ if(isformvalid){
                 
                 <br></br>
                 <br></br>
-                <div className="block row">
-          <center>     <button class="btn btn-primary" style={{padding:"10px"}} onClick={(event)=> this.submitform(event)}>
+                <fieldset>
+          <center>   
+                <button class="btn btn-primary" style={{padding:"10px"}} onClick={(event)=> this.submitform(event)}>
                      Reset your Password
-                </button></center> </div>
+                </button></center> 
+                </fieldset>
                 </form>
                 </div>
-                 </div>
-            </div>
-            </div>
         );
     }
 }

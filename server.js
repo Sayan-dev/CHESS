@@ -86,7 +86,7 @@ var transporter = nodemailer.createTransport({
 
 
 
-    app.post('/api/members/forgetpassword',auth,(req,res)=>{
+    app.post('/api/members/forgetpassword',(req,res)=>{
         Alumni.findOne({'email':req.body.email},(err,member)=>{
         if(!member){
         res.status(400).json({

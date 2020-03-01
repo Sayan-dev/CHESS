@@ -46,8 +46,7 @@ class Header extends Component {
                   <Link className ="nav-link"  to="/register">REGISTER</Link>    
                   </li>
                   {this.props.user.userData?
-                  <ul className="navbar-nav">
-                  {
+                  
                     !this.props.user.userData.isAuth?
                     <li className="nav-item">
                     <Link className ="nav-link" to="/login">LOGIN</Link>
@@ -55,25 +54,48 @@ class Header extends Component {
                     :
                     <li className="nav-item">
                     <Link className ="nav-link" to="/logout" onClick={(event)=>this.logoutuser()}>LOGOUT</Link>
-                    </li> 
-                  } 
-                  { 
-                    !this.props.user.userData.isAuth?
-                    null
-                    :this.props.user.userData.role===1?
+                    </li>:null
+    } 
+                   {
+                     this.props.user.userData?
+                     this.props.user.userData.isAuth?
+                    this.props.user.userData.role===1?
                     <li className="nav-item">
                     <Link className ="nav-link" to="/details" >ADD ACADEMIC DETAILS</Link>
-                    </li> :
+                    </li>
+                    :
                     <li className="nav-item">
                     <Link className ="nav-link" to="/allalum" >VIEW ALL ALUMNI</Link>
                     </li>
-                  }
-                  </ul>
-                  :
+                    :null
+                    :null
+                   }
+
+                   
+{
+                     this.props.user.userData?
+                     this.props.user.userData.isAuth?
+                    this.props.user.userData.role===1?
+                   
+                    <li className="nav-item">
+                    <Link className ="nav-link" to="/allalum" >VIEW ALL ALUMNI</Link>
+                    </li>
+                    :null
+                    :null
+                    :null
+                   }
+                  
+    
+                  
+                
+                  {
+                    !this.props.user.userData?
                   <li className="nav-item">
-                  <Link className ="nav-link" to="/login">LOGIN</Link>
-                  </li>
+                  <Link className ="nav-link" to="/login" >LOGIN</Link>
+                  </li>:null
                   }
+                  
+            
               </ul>
              </div>  
             </nav>

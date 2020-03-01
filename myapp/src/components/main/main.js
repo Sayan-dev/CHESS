@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import four from '../../images/4.jpg' 
-import five from '../../images/5.jpg'
+import four from '../../images/4.png' 
+import five from '../../images/3.jpg'
 import six from '../../images/1.jpg'
 const main = () => {
     return (
@@ -68,6 +68,28 @@ const main = () => {
            
            </div>
            </div>
+
+           <div id="box">
+            <div id="smallbox">
+                <i className="fas fa-user-graduate" id="cap1" style={{fontSize:"40px",color:"#E39821"}}>
+                    <h3 id="faculty"><Link to="/subject">FACULTY</Link></h3></i>
+            </div>
+            <div id="smallbox">
+                <i className="fas fa-graduation-cap" id="cap1" style={{fontSize:"40px",color:"#E39821"}}>
+                    <h3 id="faculty"><Link to="/subject">SYLLABUS</Link></h3></i>
+           </div>
+           
+           <div id="smallbox">
+            <i className="fa fa-book" id="cap1"style={{fontSize:"40px",color:"#E39821"}}>
+            <h3 id="faculty"><Link to="/register">REGISTER</Link></h3></i>
+           </div>
+           <div id="smallbox">
+            <i className="fa fa-lock" id="cap1" style={{fontSize:"40px",color:"#E39821"}}>
+            <h3 id="faculty"><Link to="/login">LOGIN</Link></h3></i>
+           </div>
+             
+        </div>
+
         </div>
            
     );
