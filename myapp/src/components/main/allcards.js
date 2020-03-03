@@ -100,7 +100,7 @@ class Allalumni extends Component {
         
              <div className="cv" >
                  <h3 className="neon" style={{textAlign:'center'}}>
-                     YOUR INFORMATION
+                    ALUMNI INFORMATION
                  </h3>
                  <div className="row">
                  <div className="col-lg-6 col-sm-6">
@@ -146,6 +146,18 @@ class Allalumni extends Component {
              <div className="row">
                  <FieldRow name={'Additional Information'}
                      value={this.state.data.additional}
+                  />
+             </div>
+             
+             <div className="row">
+                 <FieldRow name={'Academic Records'}
+                     value={this.state.data.academicrecords}
+                  />
+             </div>
+             
+             <div className="row">
+                 <FieldRow name={'Awards'}
+                     value={this.state.data.awards}
                   />
              </div>
              <button className="btn btn-primary" onClick={(event)=> this.goback(event)}>GO BACK</button>
