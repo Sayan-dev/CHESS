@@ -23,7 +23,7 @@ class Card extends Component {
               <div id="linkedin">LinkedIn ID</div>
               <div id="link">https://www.linkedin.com
                 /in/rakesh-kumar-sisodiya-835851143/</div> */}
-              <button name="submit" type="submit" id="contact-submit" onClick={(e)=>{this.props.evaction(e,this.props)}}>LOGIN</button>
+              <button name="submit" type="submit" id="contact-submit" onClick={(e)=>{this.props.evaction(e,this.props)}}>SEE DETAILS</button>
               
             </div>
               </div>            
