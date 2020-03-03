@@ -110,7 +110,7 @@ class Allalumni extends Component {
                  </div>
  
              <div className="col-lg-6 col-sm-6">
-                 <Pic image={this.state.data.images?this.state.data.images[0].url:null} text={"PHOTO"}/>
+                 <Pic image={this.state.data.images[0]?this.state.data.images[0].url:null} text={"PHOTO"}/>
              </div>
                      
              </div>
