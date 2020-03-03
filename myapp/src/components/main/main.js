@@ -90,6 +90,10 @@ const main = () => {
            <div className="col-lg-12 col-sm-12 col-md-12 description" >
                
            <h1 style={{color:"black"}}>MESSAGE FROM HOD</h1>
+               <div className="circler">
+
+               </div>
+           
                <p>Chemical Engineering Students'society is working with a motivation of developing professional
 and personal skills of students,which facilitate them to perform magnificently as an eminent
 engineer in the society. This society is aimed to provide a platform to showcase and sharpen

@@ -252,6 +252,19 @@ textarea {
     margin:10px;
   
   }
+
+  
+  .circler{
+    background-image:url("../../../images/GH.jpg");
+    background-size:cover ;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    float:left;
+    shape-outside:circle();
+    margin:10px;
+  
+  }
   body{
     margin: 0;
 }
