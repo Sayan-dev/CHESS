@@ -16,19 +16,19 @@ const main = () => {
       <div className="carousel-inner">
   
         <div className="item active">
-          <img src={four} alt="virasat"/>
+          <img src={four} alt="chess"/>
           <div className="carousel-caption">
           </div>
         </div>
   
         <div className="item">
-          <img src={five} alt="virasat"/>
+          <img src={five} alt="chess"/>
           <div className="carousel-caption">
           </div>
         </div>
       
         <div className="item">
-          <img src={six} alt="virasat"/>
+          <img src={six} alt="chess"/>
           <div className="carousel-caption">
           </div>
         </div>
