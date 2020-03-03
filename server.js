@@ -98,7 +98,7 @@ var transporter = nodemailer.createTransport({
         const emaildata={
             to:req.body.email,
             subject:'Password reset',
-            text:"Please follow the informations to reset your password:http://localhost:3000/resetpass?token=${token}",
+            text:"Please follow the informations to reset your password:http://chessnitdgp.herokuapp.com/resetpass?token=${token}",
             html:`<p>Please click the following link</p><p>http://localhost:3000/resetpass?token=${token}</p>`
         }
         Alumni.update({email:req.body.email},{$set:{resetpasslink:token}},function(err,member){
