@@ -55,7 +55,7 @@ const main = () => {
                <div className="circle">
 
                </div>
-               <p>The Chemical Engineering Student's Society (CHESS) is an independent student run society of Chemical Engineering Department of NIT DUrgapur.It is solely dedicated to form a network
+               <p>The Chemical Engineering Student's Society (CHESS) is an independent student run society of Chemical Engineering Department of NIT Durgapur.It is solely dedicated to form a network
                  among all the students,faculty members and alumni of the department. It promotes interaction  within the department and implements acadmeic, social and other programs of interest to its members.
                </p>
            

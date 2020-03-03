@@ -13,16 +13,16 @@ class Card extends Component {
                
               <div className="profile">
                 <div className="color1">
-                <img className="user" src={this.props.images[0].url} />
+                <img className="user" src={this.props.images[0]?this.props.images[0].url:null} />
                 </div>
               <div className="desco">
                             <div className="b">{this.props.name}</div>
                             <div className="c">{this.props.workplace}</div>
                           <div className="d">{this.props.year}</div>
-              
+{/*               
               <div id="linkedin">LinkedIn ID</div>
               <div id="link">https://www.linkedin.com
-                /in/rakesh-kumar-sisodiya-835851143/</div>
+                /in/rakesh-kumar-sisodiya-835851143/</div> */}
               <button name="submit" type="submit" id="contact-submit" onClick={(e)=>{this.props.evaction(e,this.props)}}>LOGIN</button>
               
             </div>
