@@ -33,7 +33,7 @@ class Header extends Component {
               <div className="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                  <Link className ="nav-link"  to="/">HOME</Link>
+                  <Link className ="nav-link" style={{fontFamily:"Times new roman",fontSize:"15px"}} to="/">HOME</Link>
                   </li>
                   <li className="nav-item">
                   <Link className ="nav-link"  to="/facad">FACULTY</Link>

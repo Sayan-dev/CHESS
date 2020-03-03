@@ -7,7 +7,7 @@ const main = () => {
     return (
         <div className="container">
          
-    <div id="myCarousel" className="carousel slide" data-ride="carousel">
+    <div id="myCarousel" className="carousel slide" data-ride="carousel" style={{height:"400px",objectFit:"cover"}}>
       <ol className="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -15,19 +15,19 @@ const main = () => {
       </ol>
       <div className="carousel-inner">
   
-        <div className="item active">
-          <img src={four} alt="chess"/>
+        <div className="item active" style={{height:"400px",objectFit:"cover"}}>
+          <img src={four} alt="chess" />
           <div className="carousel-caption">
           </div>
         </div>
   
-        <div className="item">
+        <div className="item" style={{height:"400px"}}>
           <img src={five} alt="chess"/>
           <div className="carousel-caption">
           </div>
         </div>
       
-        <div className="item">
+        <div className="item" style={{height:"400px",objectFit:"cover"}}>
           <img src={six} alt="chess"/>
           <div className="carousel-caption">
           </div>
