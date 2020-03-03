@@ -11,7 +11,8 @@ import SKL from '../../images/SKL.jpg'
 import BD from '../../images/BD.jpg'
 import MKM from '../../images/MKM.jpg'
 import PP from '../../images/PP.jpg'
-import PPG from '../../images/PPG.png'
+import PPG from '../../images/PPG.jpg'
+import TM from '../../images/TM.jpg'
 import RGC from '../../images/RGC.jpg'
 import KCG from '../../images/KCG.jpg'
 
@@ -279,7 +280,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={PPG} className="user"/>
+                <img src={TM} className="user"/>
                 </div>
               <div className="desco">
                 <div className="b">Tamal Mandal</div>
