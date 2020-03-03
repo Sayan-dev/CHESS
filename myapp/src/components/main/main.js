@@ -57,6 +57,18 @@ const main = () => {
                </div>
                <p>The Chemical Engineering Student's Society (CHESS) is an independent student run society of Chemical Engineering Department of NIT Durgapur.It is solely dedicated to form a network
                  among all the students,faculty members and alumni of the department. It promotes interaction  within the department and implements acadmeic, social and other programs of interest to its members.
+               <center>  <h3><u>MESSAGE FROM HOD</u></h3> </center>
+                 Chemical Engineering Students'society is working with a motivation of developing professional
+and personal skills of students,which facilitate them to perform magnificently as an eminent
+engineer in the society. This society is aimed to provide a platform to showcase and sharpen
+student's talents through a variety of events and activities planned throughout four years,
+for overall development of students personalities. We continue our effort to prepare and
+guide the students for the various competitive exams and interviews so that they perform
+better and make their carrier in the selected fields. Real world problems will be blended in
+the curriculum and these are to be taught by experts from industry, in addition through guest
+lectures. Our focus is to effectively train our students as chemical engineers who can serve the
+society competently, collaboratively and ethically as planners, designers and operators of the
+environment.
                </p>
            
            

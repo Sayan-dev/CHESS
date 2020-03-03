@@ -36,23 +36,23 @@ class Header extends Component {
                   <Link className ="nav-link" style={{fontFamily:"Times new roman",fontSize:"15px"}} to="/">HOME</Link>
                   </li>
                   <li className="nav-item">
-                  <Link className ="nav-link"  to="/facad">FACULTY</Link>
+                  <Link className ="nav-link" style={{fontFamily:"Times new roman",fontSize:"15px"}} to="/facad">FACULTY</Link>
                   </li>
                   <li className="nav-item">
-                  <Link className ="nav-link"  to="/subject">SYLLABUS</Link>
+                  <Link className ="nav-link" style={{fontFamily:"Times new roman",fontSize:"15px"}} to="/subject">SYLLABUS</Link>
                   </li>
                   <li className="nav-item">
-                  <Link className ="nav-link"  to="/register">REGISTER</Link>    
+                  <Link className ="nav-link" style={{fontFamily:"Times new roman",fontSize:"15px"}} to="/register">REGISTER</Link>    
                   </li>
                   {this.props.user.userData?
                   
                     !this.props.user.userData.isAuth?
                     <li className="nav-item">
-                    <Link className ="nav-link" to="/login">LOGIN</Link>
+                    <Link className ="nav-link"  style={{fontFamily:"Times new roman",fontSize:"15px"}} to="/login">LOGIN</Link>
                     </li>
                     :
                     <li className="nav-item">
-                    <Link className ="nav-link" to="/logout" onClick={(event)=>this.logoutuser()}>LOGOUT</Link>
+                    <Link className ="nav-link" style={{fontFamily:"Times new roman",fontSize:"15px"}} to="/logout" onClick={(event)=>this.logoutuser()}>LOGOUT</Link>
                     </li>:null
     } 
                    {
@@ -60,11 +60,11 @@ class Header extends Component {
                      this.props.user.userData.isAuth?
                     this.props.user.userData.role===1?
                     <li className="nav-item">
-                    <Link className ="nav-link" to="/details" >ADD ACADEMIC DETAILS</Link>
+                    <Link className ="nav-link" style={{fontFamily:"Times new roman",fontSize:"15px"}} to="/details" >ADD ACADEMIC DETAILS</Link>
                     </li>
                     :
                     <li className="nav-item">
-                    <Link className ="nav-link" to="/allalum" >VIEW ALL ALUMNI</Link>
+                    <Link className ="nav-link" style={{fontFamily:"Times new roman",fontSize:"15px"}} to="/allalum" >VIEW ALL ALUMNI</Link>
                     </li>
                     :null
                     :null
@@ -77,7 +77,7 @@ class Header extends Component {
                     this.props.user.userData.role===1?
                    
                     <li className="nav-item">
-                    <Link className ="nav-link" to="/allalum" >VIEW ALL ALUMNI</Link>
+                    <Link className ="nav-link" style={{fontFamily:"Times new roman",fontSize:"15px"}} to="/allalum" >VIEW ALL ALUMNI</Link>
                     </li>
                     :null
                     :null
@@ -90,7 +90,7 @@ class Header extends Component {
                   {
                     !this.props.user.userData?
                   <li className="nav-item">
-                  <Link className ="nav-link" to="/login" >LOGIN</Link>
+                  <Link className ="nav-link" style={{fontFamily:"Times new roman",fontSize:"15px"}} to="/login" >LOGIN</Link>
                   </li>:null
                   }
                   
