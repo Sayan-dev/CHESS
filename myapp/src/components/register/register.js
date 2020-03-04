@@ -219,7 +219,7 @@ onrchange=(e)=>{
                 </div>
 
                 <br></br>
-                <div className="row">
+                {/* <div className="row">
                    <label style={{fontFamily:'algerian'}}> ARE YOU AN ADMIN ? </label> 
            <div className="row">
            <div className="col-lg-6 col-sm-6 col-md-6 col-xs-6">
@@ -247,7 +247,7 @@ onrchange=(e)=>{
                 </div>
                 </div>
                 </div>
-
+ */}
 
                 <br></br>
                 <br></br>

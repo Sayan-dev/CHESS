@@ -89,7 +89,7 @@ const main = () => {
            
            <div className="col-lg-12 col-sm-12 col-md-12 description" >
                
-           <h1 style={{color:"black"}}>MESSAGE FROM HOD(Prof Gopinath Halder)</h1>
+           <h1 style={{color:"black"}}>MESSAGE FROM HOD:Prof Gopinath Halder</h1>
                <div className="circler">
 
                </div>

@@ -19,6 +19,36 @@ import KCG from '../../images/KCG.jpg'
 const Facad = () => {
     return (
         <div>
+          
+          <section id="testimonials">
+              <div className="container">
+              
+              <div className="row">
+             <div className="col-md-4 text-center">
+               
+              <div className="profile">
+                <div className="color1">
+                <img src={PPG} className="user"/>
+                </div>
+              <div className="desco">
+                <div className="b">Parthapratim Gupta</div>
+              <div className="c">Professor</div>
+              <div className="b">parthapratim.gupta@che.nitdgp.ac.in</div>
+              <div className="d">9434788028</div>
+              
+              {/* <div id="linkedin">LinkedIn ID</div>
+              <div id="link">https://www.linkedin.com
+                /in/rakesh-kumar-sisodiya-835851143/</div>
+              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
+               */}
+            </div>
+              </div>            
+              </div>
+              </div>
+              </div>
+             </section>             
+
+
              <section id="testimonials">
               <div className="container">
               
@@ -27,13 +57,13 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={RGC} className="user"/>
+                <img src={PP} className="user"/>
                 </div>
               <div className="desco">
-                <div className="b">Rajib Ghosh Chaudhuri</div>
-              <div className="c">Assitant Professor</div>
-              <div className="b">rajib.ghoshchaudhuri@che.nitdgp.ac.in</div>
-              <div className="d">7596854649</div>
+                <div className="b">Parimal Pal</div>
+              <div className="c">Professor</div>
+              <div className="b">parimal.pal@che.nitdgp.ac.in</div>
+              <div className="d">9434788105</div>
               
               {/* <div id="linkedin">LinkedIn ID</div>
               <div id="link">https://www.linkedin.com
@@ -47,6 +77,7 @@ const Facad = () => {
               </div>
              </section>             
              
+
              <section id="testimonials">
               <div className="container">
               
@@ -55,15 +86,74 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={BD} className="user"/>
+                <img src={KCG} className="user"/>
                 </div>
               <div className="desco">
-                <div className="b">Bimal Das</div>
-              <div className="c">Assitant Professor</div>
-              <div className="b">bimal.das@che.nitdgp.ac.in</div>
-              <div className="d">9434789023</div>
+                <div className="b">Kartik Chandra Ghanta</div>
+              <div className="c">Professor</div>
+              <div className="b">kartik.ghanta@che.nitdgp.ac.in</div>
+              <div className="d">9434788020</div>
 {/*               
               <div id="linkedin">LinkedIn ID</div>
+              <div id="link">https://www.linkedin.com
+                /in/rakesh-kumar-sisodiya-835851143/</div>
+              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
+               */}
+            </div>
+              </div>            
+              </div>
+              </div>
+              </div>
+             </section>             
+             
+             
+             <section id="testimonials">
+              <div className="container">
+              
+              <div className="row">
+             <div className="col-md-4 text-center">
+               
+              <div className="profile">
+                <div className="color1">
+                <img src={TM} className="user"/>
+                </div>
+              <div className="desco">
+                <div className="b">Tamal Mandal</div>
+              <div className="c">Professor</div>
+              <div className="b">tamal.mandal@che.nitdgp.ac.in</div>
+              <div className="d">9434788078</div>
+              
+              {/* <div id="linkedin">LinkedIn ID</div>
+              <div id="link">https://www.linkedin.com
+                /in/rakesh-kumar-sisodiya-835851143/</div>
+              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
+               */}
+            </div>
+              </div>            
+              </div>
+              </div>
+              </div>
+             </section>             
+             
+             
+             
+             <section id="testimonials">
+              <div className="container">
+              
+              <div className="row">
+             <div className="col-md-4 text-center">
+               
+              <div className="profile">
+                <div className="color1">
+                <img src={AKS} className="user"/>
+                </div>
+              <div className="desco">
+                <div className="b">Anup Kumar Sadhukhan</div>
+              <div className="c">Professor</div>
+              <div className="b">anupkumar.sadhukhan@che.nitdgp.ac.in</div>
+              <div className="d">9434788048</div>
+              
+              {/* <div id="linkedin">LinkedIn ID</div>
               <div id="link">https://www.linkedin.com
                 /in/rakesh-kumar-sisodiya-835851143/</div>
               <button name="submit" type="submit" id="contact-submit">LOGIN</button>
@@ -103,6 +193,7 @@ const Facad = () => {
               </div>
              </section>             
              
+             
              <section id="testimonials">
               <div className="container">
               
@@ -111,13 +202,70 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={KCG} className="user"/>
+                <img src={GH} className="user"/>
                 </div>
               <div className="desco">
-                <div className="b">Kartik Chandra Ghanta</div>
+                <div className="b">Gopinath Halder</div>
               <div className="c">Professor</div>
-              <div className="b">kartik.ghanta@che.nitdgp.ac.in</div>
-              <div className="d">9434788020</div>
+              <div className="b">gopinath.halder@che.nitdgp.ac.in</div>
+              <div className="d">9434788189</div>
+              
+              {/* <div id="linkedin">LinkedIn ID</div>
+              <div id="link">https://www.linkedin.com
+                /in/rakesh-kumar-sisodiya-835851143/</div>
+              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
+               */}
+            </div>
+              </div>            
+              </div>
+              </div>
+              </div>
+             </section>             
+             <section id="testimonials">
+              <div className="container">
+              
+              <div className="row">
+             <div className="col-md-4 text-center">
+               
+              <div className="profile">
+                <div className="color1">
+                <img src={MKM} className="user"/>
+                </div>
+              <div className="desco">
+                <div className="b">Mrinal Kanti Mondal</div>
+              <div className="c">Associate Professor</div>
+              <div className="b">mrinalkanti.mandal@che.nitdgp.ac.in</div>
+              <div className="d">9434788188</div>
+{/*               
+              <div id="linkedin">LinkedIn ID</div>
+              <div id="link">https://www.linkedin.com
+                /in/rakesh-kumar-sisodiya-835851143/</div>
+              <button name="submit" type="submit" id="contact-submit">LOGIN</button> */}
+              
+            </div>
+              </div>            
+              </div>
+              </div>
+              </div>
+             </section>             
+             
+             
+               
+             <section id="testimonials">
+              <div className="container">
+              
+              <div className="row">
+             <div className="col-md-4 text-center">
+               
+              <div className="profile">
+                <div className="color1">
+                <img src={SKL} className="user"/>
+                </div>
+              <div className="desco">
+                <div className="b">Sandip Kumar Lahiri</div>
+              <div className="c">Associate Professor</div>
+              <div className="b">sandipkumar.lahiri@che.nitdgp.ac.in</div>
+              <div className="d">9007659000</div>
 {/*               
               <div id="linkedin">LinkedIn ID</div>
               <div id="link">https://www.linkedin.com
@@ -139,13 +287,13 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={PPG} className="user"/>
+                <img src={JS} className="user"/>
                 </div>
               <div className="desco">
-                <div className="b">Parthapratim Gupta</div>
-              <div className="c">Professor</div>
-              <div className="b">parthapratim.gupta@che.nitdgp.ac.in</div>
-              <div className="d">9434788028</div>
+                <div className="b">Jaya Sikder</div>
+              <div className="c">Associate Professor</div>
+              <div className="b">jaya.sikder@che.nitdgp.ac.in</div>
+              <div className="d">9434788186</div>
               
               {/* <div id="linkedin">LinkedIn ID</div>
               <div id="link">https://www.linkedin.com
@@ -158,6 +306,34 @@ const Facad = () => {
               </div>
               </div>
              </section>             
+             <section id="testimonials">
+              <div className="container">
+              
+              <div className="row">
+             <div className="col-md-4 text-center">
+               
+              <div className="profile">
+                <div className="color1">
+                <img src={SP} className="user"/>
+                </div>
+              <div className="desco">
+                <div className="b">Swapan Paruya</div>
+              <div className="c">Assistant Professor</div>
+              <div className="b">swapan.paruya@che.nitdgp.ac.in</div>
+              <div className="d">9474404033</div>
+              
+              {/* <div id="linkedin">LinkedIn ID</div>
+              <div id="link">https://www.linkedin.com
+                /in/rakesh-kumar-sisodiya-835851143/</div>
+              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
+               */}
+            </div>
+              </div>            
+              </div>
+              </div>
+              </div>
+             </section>             
+ 
              
              <section id="testimonials">
               <div className="container">
@@ -167,15 +343,15 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={GH} className="user"/>
+                <img src={BD} className="user"/>
                 </div>
               <div className="desco">
-                <div className="b">Gopinath Halder</div>
-              <div className="c">Professor</div>
-              <div className="b">gopinath.halder@che.nitdgp.ac.in</div>
-              <div className="d">9434788189</div>
-              
-              {/* <div id="linkedin">LinkedIn ID</div>
+                <div className="b">Bimal Das</div>
+              <div className="c">Assitant Professor</div>
+              <div className="b">bimal.das@che.nitdgp.ac.in</div>
+              <div className="d">9434789023</div>
+{/*               
+              <div id="linkedin">LinkedIn ID</div>
               <div id="link">https://www.linkedin.com
                 /in/rakesh-kumar-sisodiya-835851143/</div>
               <button name="submit" type="submit" id="contact-submit">LOGIN</button>
@@ -214,7 +390,7 @@ const Facad = () => {
               </div>
               </div>
              </section>             
-             
+            
              <section id="testimonials">
               <div className="container">
               
@@ -223,70 +399,13 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={MKM} className="user"/>
+                <img src={RGC} className="user"/>
                 </div>
               <div className="desco">
-                <div className="b">Mrinal Kanti Mondal</div>
-              <div className="c">Associate Professor</div>
-              <div className="b">mrinalkanti.mandal@che.nitdgp.ac.in</div>
-              <div className="d">9434788188</div>
-{/*               
-              <div id="linkedin">LinkedIn ID</div>
-              <div id="link">https://www.linkedin.com
-                /in/rakesh-kumar-sisodiya-835851143/</div>
-              <button name="submit" type="submit" id="contact-submit">LOGIN</button> */}
-              
-            </div>
-              </div>            
-              </div>
-              </div>
-              </div>
-             </section>             
-
-               
-             <section id="testimonials">
-              <div className="container">
-              
-              <div className="row">
-             <div className="col-md-4 text-center">
-               
-              <div className="profile">
-                <div className="color1">
-                <img src={SKL} className="user"/>
-                </div>
-              <div className="desco">
-                <div className="b">Sandip Kumar Lahiri</div>
-              <div className="c">Associate Professor</div>
-              <div className="b">sandipkumar.lahiri@che.nitdgp.ac.in</div>
-              <div className="d">9007659000</div>
-{/*               
-              <div id="linkedin">LinkedIn ID</div>
-              <div id="link">https://www.linkedin.com
-                /in/rakesh-kumar-sisodiya-835851143/</div>
-              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
-               */}
-            </div>
-              </div>            
-              </div>
-              </div>
-              </div>
-             </section>             
-             
-             <section id="testimonials">
-              <div className="container">
-              
-              <div className="row">
-             <div className="col-md-4 text-center">
-               
-              <div className="profile">
-                <div className="color1">
-                <img src={TM} className="user"/>
-                </div>
-              <div className="desco">
-                <div className="b">Tamal Mandal</div>
-              <div className="c">Professor</div>
-              <div className="b">tamal.mandal@che.nitdgp.ac.in</div>
-              <div className="d">9434788078</div>
+                <div className="b">Rajib Ghosh Chaudhuri</div>
+              <div className="c">Assitant Professor</div>
+              <div className="b">rajib.ghoshchaudhuri@che.nitdgp.ac.in</div>
+              <div className="d">7596854649</div>
               
               {/* <div id="linkedin">LinkedIn ID</div>
               <div id="link">https://www.linkedin.com
@@ -328,119 +447,6 @@ const Facad = () => {
               </div>
              </section>             
              
-             <section id="testimonials">
-              <div className="container">
-              
-              <div className="row">
-             <div className="col-md-4 text-center">
-               
-              <div className="profile">
-                <div className="color1">
-                <img src={PP} className="user"/>
-                </div>
-              <div className="desco">
-                <div className="b">Parimal Pal</div>
-              <div className="c">Professor</div>
-              <div className="b">parimal.pal@che.nitdgp.ac.in</div>
-              <div className="d">9434788105</div>
-              
-              {/* <div id="linkedin">LinkedIn ID</div>
-              <div id="link">https://www.linkedin.com
-                /in/rakesh-kumar-sisodiya-835851143/</div>
-              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
-               */}
-            </div>
-              </div>            
-              </div>
-              </div>
-              </div>
-             </section>             
-             
-             <section id="testimonials">
-              <div className="container">
-              
-              <div className="row">
-             <div className="col-md-4 text-center">
-               
-              <div className="profile">
-                <div className="color1">
-                <img src={SP} className="user"/>
-                </div>
-              <div className="desco">
-                <div className="b">Swapan Paruya</div>
-              <div className="c">Assistant Professor</div>
-              <div className="b">swapan.paruya@che.nitdgp.ac.in</div>
-              <div className="d">9474404033</div>
-              
-              {/* <div id="linkedin">LinkedIn ID</div>
-              <div id="link">https://www.linkedin.com
-                /in/rakesh-kumar-sisodiya-835851143/</div>
-              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
-               */}
-            </div>
-              </div>            
-              </div>
-              </div>
-              </div>
-             </section>             
-             
-             
-             <section id="testimonials">
-              <div className="container">
-              
-              <div className="row">
-             <div className="col-md-4 text-center">
-               
-              <div className="profile">
-                <div className="color1">
-                <img src={AKS} className="user"/>
-                </div>
-              <div className="desco">
-                <div className="b">Anup Kumar Sadhukhan</div>
-              <div className="c">Professor</div>
-              <div className="b">anupkumar.sadhukhan@che.nitdgp.ac.in</div>
-              <div className="d">9434788048</div>
-              
-              {/* <div id="linkedin">LinkedIn ID</div>
-              <div id="link">https://www.linkedin.com
-                /in/rakesh-kumar-sisodiya-835851143/</div>
-              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
-               */}
-            </div>
-              </div>            
-              </div>
-              </div>
-              </div>
-             </section>             
-             
-             
-             <section id="testimonials">
-              <div className="container">
-              
-              <div className="row">
-             <div className="col-md-4 text-center">
-               
-              <div className="profile">
-                <div className="color1">
-                <img src={JS} className="user"/>
-                </div>
-              <div className="desco">
-                <div className="b">Jaya Sikder</div>
-              <div className="c">Associate Professor</div>
-              <div className="b">jaya.sikder@che.nitdgp.ac.in</div>
-              <div className="d">9434788186</div>
-              
-              {/* <div id="linkedin">LinkedIn ID</div>
-              <div id="link">https://www.linkedin.com
-                /in/rakesh-kumar-sisodiya-835851143/</div>
-              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
-               */}
-            </div>
-              </div>            
-              </div>
-              </div>
-              </div>
-             </section>             
              
         </div>
     );
